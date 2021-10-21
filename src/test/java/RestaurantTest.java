@@ -64,7 +64,7 @@ class RestaurantTest {
 
         int initialMenuSize = restaurant.getMenu().size();
         restaurant.removeFromMenu("Vegetable lasagne");
-        assertEquals(initialMenuSize-1,restaurant.getMenu().size());
+        assertEquals(initialMenuSize-6,restaurant.getMenu().size());
     }
     @Test
     public void removing_item_that_does_not_exist_should_throw_exception() {
